@@ -2,77 +2,155 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhật ký Đặng Thùy Trâm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f7f2f0;
-            line-height: 1.6;
+        :root {
+            --primary: #8b1e1e;
+            --secondary: #5d1111;
+            --accent: #d4a373;
+            --bg: #f4f1ea;
+            --text: #2d3436;
+            --glass: rgba(255, 255, 255, 0.95);
         }
 
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* Header phong cách hiện đại */
         header {
-            background-color: #8b1e1e;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 80px 20px 100px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         }
 
         header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
             margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
         }
 
+        /* Container chính */
         .container {
-            width: 80%;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
+            max-width: 800px;
+            margin: -60px auto 60px;
+            background: var(--glass);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
         }
 
+        /* Bìa sách nhỏ gọn */
         .book-cover {
             text-align: center;
-            margin: 20px 0;
+            margin-bottom: 40px;
         }
 
         .book-cover img {
-            width: 200px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            width: 160px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .book-cover img:hover {
+            transform: scale(1.05) rotate(2deg);
         }
 
         h2 {
-            color: #8b1e1e;
-            border-left: 5px solid #8b1e1e;
-            padding-left: 10px;
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-size: 1.8rem;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin: 40px 0 20px;
         }
 
-        ul {
-            margin-left: 20px;
+        /* Khối Cảm nhận cá nhân */
+        .feeling-box {
+            background: #fffcf7;
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: 15px;
+            position: relative;
         }
 
-        .quote {
-            background-color: #f2e6e6;
-            border-left: 5px solid #8b1e1e;
-            padding: 15px;
+        .feeling-box p {
             font-style: italic;
-            margin: 20px 0;
+            color: #444;
         }
 
-        .media {
-            margin: 30px 0;
+        /* Trích dẫn */
+        .quote {
+            background: #fdf2f2;
+            border-radius: 15px;
+            padding: 30px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
             text-align: center;
+            color: var(--secondary);
+            margin: 40px 0;
         }
 
+        /* Media Thu nhỏ */
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 400px; /* Video đã được thu nhỏ đáng kể */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        audio {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "✦";
+            color: var(--accent);
+            margin-right: 10px;
+        }
+
+        /* Footer */
         footer {
-            background-color: #e0e0e0;
+            background: #2d3436;
+            color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-            font-size: 14px;
+            padding: 40px 20px;
         }
 
-        footer a {
-            color: #8b1e1e;
-            text-decoration: none;
+        footer a { color: var(--accent); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; width: 90%; }
+            header h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -80,67 +158,60 @@
 
 <header>
     <h1>Nhật ký Đặng Thùy Trâm</h1>
-    <p>Tác giả: Đặng Thùy Trâm</p>
+    <p>Nơi trái tim rực lửa giữa mưa bom</p>
 </header>
 
 <div class="container">
-
     <div class="book-cover">
-        <!-- Thay link ảnh nếu cần -->
-        <img src="thao.jpg" alt="Bìa sách Nhật ký Đặng Thùy Trâm">
+        <img src="thao.jpg" alt="Bìa sách">
     </div>
-    <h2>Tóm tắt nội dung</h2>
-    <p>
-        “Nhật ký Đặng Thùy Trâm” là cuốn nhật ký ghi lại cuộc sống và tâm tư
-        của bác sĩ Đặng Thùy Trâm trong những năm kháng chiến chống Mỹ.
-        Cuốn sách phản ánh cuộc sống gian khổ nơi chiến trường,
-        nhưng cũng thể hiện lòng yêu nước, tinh thần trách nhiệm
-        và lý tưởng sống cao đẹp của thế hệ thanh niên Việt Nam.
-    </p>
 
-    <h2>Cảm nhận cá nhân</h2>
-    <p>
-        Em rất xúc động khi đọc “Nhật ký Đặng Thùy Trâm”.
-        Những dòng nhật ký giản dị nhưng chứa đựng tình yêu nước sâu sắc.
-        Tác phẩm giúp em hiểu hơn về sự hy sinh của thế hệ đi trước
-        và nhắc nhở em sống có trách nhiệm hơn với bản thân và xã hội.
-    </p>
+    <section>
+        <h2>Tóm tắt nội dung</h2>
+        <p>Cuốn nhật ký ghi lại những năm tháng chiến đấu kiên cường của bác sĩ quân y Đặng Thùy Trâm tại chiến trường Quảng Ngãi. Đó không chỉ là câu chuyện về y đức, mà còn là tâm hồn cao đẹp của một người con gái Hà Nội giữa khói lửa chiến tranh khốc liệt.</p>
+    </section>
 
-    <h2>Thông tin thú vị</h2>
-    <ul>
-        <li>Cuốn nhật ký được một cựu binh Mỹ giữ lại hơn 30 năm.</li><li>Tác phẩm được xuất bản lần đầu tại Việt Nam năm 2005.</li>
-        <li>Cuốn sách truyền cảm hứng mạnh mẽ cho giới trẻ.</li>
-    </ul>
-
+    <section>
+        <h2>Cảm nhận cá nhân</h2>
+        <div class="feeling-box">
+            <p>
+                Em vô cùng xúc động khi lật giở từng trang nhật ký của chị Thùy Trâm. Những dòng chữ giản dị nhưng đầy nghị lực ấy đã chạm đến trái tim em, giúp em hiểu rõ hơn về giá trị của hòa bình hôm nay. Hình ảnh một nữ bác sĩ nhỏ bé nhưng mang trong mình lý tưởng lớn lao chính là nguồn cảm hứng mạnh mẽ, nhắc nhở em phải sống có ích và trách nhiệm hơn với đất nước.
+            </p>
+        </div>
+    </section>
     <h2>Trích dẫn hay</h2>
     <div class="quote">
         “Đời phải trải qua giông tố nhưng không được cúi đầu trước giông tố.”
     </div>
 
-    <h2>Video giới thiệu</h2>
-    <div class="media">
-        <!-- Thay video.mp4 bằng video của bạn -->
-        <video width="80%" controls>
-            <source src="video.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ video.
-        </video>
-    </div>
+    <section>
+        <h2>Thông tin thú vị</h2>
+        <ul>
+            <li>Cuốn nhật ký được cựu binh Mỹ lưu giữ hơn 30 năm trước khi trao trả.</li>
+            <li>Đã được dịch ra nhiều ngôn ngữ trên thế giới.</li>
+            <li>Gợi lại khí thế hào hùng của một thế hệ thanh niên "Quyết tử cho Tổ quốc quyết sinh".</li>
+        </ul>
+    </section>
 
-    <h2>Âm thanh giới thiệu</h2>
-    <div class="media">
-        <!-- Thay audio.mp3 bằng file âm thanh của bạn -->
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-            Trình duyệt của bạn không hỗ trợ âm thanh.
-        </audio>
-    </div>
-
+    <section>
+        <h2>Tài liệu tham khảo</h2>
+        <div class="media-section">
+            <p><strong>Video giới thiệu</strong></p>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            
+            <p><strong>Âm thanh tư liệu</strong></p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
 </div>
 
 <footer>
-    <p>Người thực hiện: Học sinh lớp 12</p>
-    <p>Liên hệ: <a href="mailto:nguyenthithanhthaonhu3@gmail.com">
-        nguyenthithanhthaonhu3@gmail.com</a></p>
+    <p>Người thực hiện: <strong>Nguyễn Thị Thanh Thảo</strong></p>
+    <p>Email: <a href="mailto:nguyenthithanhthaonhu3@gmail.com">nguyenthithanhthaonhu3@gmail.com</a></p>
 </footer>
 
 </body>
