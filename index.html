@@ -6,59 +6,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;#42445A
-            padding: 0;
+            margin: 0;
+            background-color: #f7f2f0;
+            line-height: 1.6;
         }
 
         header {
             background-color: #8b1e1e;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
-        main {
-            max-width: 900px;
-            margin: 20px auto;
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
             background-color: white;
             padding: 20px;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 250px;
+        .book-cover {
+            text-align: center;
+            margin: 20px 0;
         }
 
-        section {
-            margin-bottom: 25px;
+        .book-cover img {
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
 
         h2 {
             color: #8b1e1e;
-        }
-
-        blockquote {
-            background-color: #f0e6e6;
-            padding: 15px;
             border-left: 5px solid #8b1e1e;
-            font-style: italic;
+            padding-left: 10px;
         }
 
-        ul li {
-            margin-bottom: 8px;
+        ul {
+            margin-left: 20px;
+        }
+
+        .quote {
+            background-color: #f2e6e6;
+            border-left: 5px solid #8b1e1e;
+            padding: 15px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .media {
+            margin: 30px 0;
+            text-align: center;
         }
 
         footer {
+            background-color: #e0e0e0;
             text-align: center;
-            background-color: #ddd;
-            padding: 10px;
+            padding: 15px;
+            margin-top: 30px;
             font-size: 14px;
+        }
+
+        footer a {
+            color: #8b1e1e;
+            text-decoration: none;
         }
     </style>
 </head>
-
 <body>
 
 <header>
@@ -66,158 +83,65 @@
     <p>Tác giả: Đặng Thùy Trâm</p>
 </header>
 
-<main>
+<div class="container">
 
-    <section>
-        <img src="https://www.netabooks.vn/Data/Sites/1/Product/17334/nhat-ky-dang-thuy-tram.jpg" alt="Bìa sách Nhật ký Đặng Thùy Trâm"> 
-    </section>
+    <div class="book-cover">
+        <!-- Thay link ảnh nếu cần -->
+        <img src="thao.jpg" alt="Bìa sách Nhật ký Đặng Thùy Trâm">
+    </div>
+    <h2>Tóm tắt nội dung</h2>
+    <p>
+        “Nhật ký Đặng Thùy Trâm” là cuốn nhật ký ghi lại cuộc sống và tâm tư
+        của bác sĩ Đặng Thùy Trâm trong những năm kháng chiến chống Mỹ.
+        Cuốn sách phản ánh cuộc sống gian khổ nơi chiến trường,
+        nhưng cũng thể hiện lòng yêu nước, tinh thần trách nhiệm
+        và lý tưởng sống cao đẹp của thế hệ thanh niên Việt Nam.
+    </p>
 
-    <section>
-        <h2> Tóm tắt nội dung</h2>
-        <article>
-            <p>
-                “Nhật ký Đặng Thùy Trâm” là cuốn nhật ký ghi lại cuộc sống và tâm tư của bác sĩ Đặng Thùy Trâm
-                trong những năm kháng chiến chống Mỹ. Cuốn sách phản ánh cuộc sống gian khổ nơi chiến trường,
-                những ca phẫu thuật trong điều kiện thiếu thốn và sự hy sinh thầm lặng của người nữ bác sĩ trẻ.
-                Qua từng trang viết, người đọc cảm nhận được lòng yêu nước, tinh thần trách nhiệm và lý tưởng sống cao đẹp.
-                Cuốn nhật ký không chỉ là câu chuyện cá nhân mà còn là hình ảnh tiêu biểu của cả một thế hệ thanh niên Việt Nam.
-            </p>
-        </article>
-    </section>
+    <h2>Cảm nhận cá nhân</h2>
+    <p>
+        Em rất xúc động khi đọc “Nhật ký Đặng Thùy Trâm”.
+        Những dòng nhật ký giản dị nhưng chứa đựng tình yêu nước sâu sắc.
+        Tác phẩm giúp em hiểu hơn về sự hy sinh của thế hệ đi trước
+        và nhắc nhở em sống có trách nhiệm hơn với bản thân và xã hội.
+    </p>
 
-    <section>
-        <h2> Cảm nhận cá nhân</h2>
-        <article>
-            <p>
-                Em rất xúc động khi đọc “Nhật ký Đặng Thùy Trâm”. Tác phẩm cho em hiểu rõ hơn về sự hy sinh lớn lao
-                của thế hệ đi trước. Những dòng nhật ký giản dị nhưng chứa đựng tình yêu nước sâu sắc.
-                Qua đó, em cảm thấy cần sống có trách nhiệm hơn với bản thân và xã hội.
-            </p>
-        </article>
-    </section>
+    <h2>Thông tin thú vị</h2>
+    <ul>
+        <li>Cuốn nhật ký được một cựu binh Mỹ giữ lại hơn 30 năm.</li><li>Tác phẩm được xuất bản lần đầu tại Việt Nam năm 2005.</li>
+        <li>Cuốn sách truyền cảm hứng mạnh mẽ cho giới trẻ.</li>
+    </ul>
 
-    <section>
-        <h2>Thông tin thú vị</h2>
-        <ul>
-            <li>Cuốn nhật ký được một cựu binh Mỹ giữ lại suốt hơn 30 năm.</li>
-            <li>Tác phẩm được xuất bản lần đầu tại Việt Nam năm 2005.</li>
-            <li>Cuốn sách đã truyền cảm hứng mạnh mẽ cho giới trẻ.</li>
-        </ul><!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+    <h2>Trích dẫn hay</h2>
+    <div class="quote">
+        “Đời phải trải qua giông tố nhưng không được cúi đầu trước giông tố.”
+    </div>
 
-        header {
-            background-color: #8b1e1e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+    <h2>Video giới thiệu</h2>
+    <div class="media">
+        <!-- Thay video.mp4 bằng video của bạn -->
+        <video width="80%" controls>
+            <source src="video.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </div>
 
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-        }
+    <h2>Âm thanh giới thiệu</h2>
+    <div class="media">
+        <!-- Thay audio.mp3 bằng file âm thanh của bạn -->
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ âm thanh.
+        </audio>
+    </div>
 
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 250px;
-        }
+</div>
 
-        section {
-            margin-bottom: 25px;
-        }
+<footer>
+    <p>Người thực hiện: Học sinh lớp 12</p>
+    <p>Liên hệ: <a href="mailto:nguyenthithanhthaonhu3@gmail.com">
+        nguyenthithanhthaonhu3@gmail.com</a></p>
+</footer>
 
-        h2 {
-            color: #8b1e1e;
-        }
-
-        blockquote {
-            background-color: #f0e6e6;
-            padding: 15px;
-            border-left: 5px solid #8b1e1e;
-            font-style: italic;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #ddd;
-            padding: 10px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-
-<body>
-
-<main>
-
-    <section>
-        <h2> Tóm tắt nội dung</h2>
-        <article>
-            <p>
-                “Nhật ký Đặng Thùy Trâm” là cuốn nhật ký ghi lại cuộc sống và tâm tư của bác sĩ Đặng Thùy Trâm
-                trong những năm kháng chiến chống Mỹ. Cuốn sách phản ánh cuộc sống gian khổ nơi chiến trường,
-                những ca phẫu thuật trong điều kiện thiếu thốn và sự hy sinh thầm lặng của người nữ bác sĩ trẻ.
-                Qua từng trang viết, người đọc cảm nhận được lòng yêu nước, tinh thần trách nhiệm và lý tưởng sống cao đẹp.
-                Cuốn nhật ký không chỉ là câu chuyện cá nhân mà còn là hình ảnh tiêu biểu của cả một thế hệ thanh niên Việt Nam.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2> Cảm nhận cá nhân</h2>
-        <article>
-            <p>
-                Em rất xúc động khi đọc “Nhật ký Đặng Thùy Trâm”. Tác phẩm cho em hiểu rõ hơn về sự hy sinh lớn lao
-                của thế hệ đi trước. Những dòng nhật ký giản dị nhưng chứa đựng tình yêu nước sâu sắc.
-                Qua đó, em cảm thấy cần sống có trách nhiệm hơn với bản thân và xã hội.
-            </p>
-        </article>
-    </section>
-
-    <section>
-        <h2>Thông tin thú vị</h2>
-        <ul>
-            <li>Cuốn nhật ký được một cựu binh Mỹ giữ lại suốt hơn 30 năm.</li>
-            <li>Tác phẩm được xuất bản lần đầu tại Việt Nam năm 2005.</li>
-            <li>Cuốn sách đã truyền cảm hứng mạnh mẽ cho giới trẻ.</li>
-        </ul>
-    </section>
-    <section>
-        <h2> Trích dẫn hay</h2>
-        <blockquote>
-            “Đời phải trải qua giông tố nhưng không được cúi đầu trước giông tố.”
-        </blockquote>
-    </section>
-</main>
-</body>
-</html>
-    </section>
-    <section>
-        <h2> Trích dẫn hay</h2>
-        <blockquote>
-            “Đời phải trải qua giông tố nhưng không được cúi đầu trước giông tố.”
-        </blockquote>
-    </section>
-    <footer>
-        <p>Người thực hiện: Học sinh lớp 12</p>
-        <p>Liên hệ: <a href="mailto: nguyenthithanhthaonhu3thao@gmail.com">nguyenthithanhthaonhu3thao@gmail.com</a></p>
-    </footer>
-</main>
 </body>
 </html>
